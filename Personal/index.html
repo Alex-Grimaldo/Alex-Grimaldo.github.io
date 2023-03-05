@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Alex Grimaldo</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a href="#body" class="navbar-brand text-white">Alex Grimaldo</a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Navigation Bar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Navigation Bar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu" toggle="collapse" data-target=".navbar-collapse">
@@ -44,13 +44,15 @@
             </div>
         </div>
     </nav>
+    <!-- Hero -->
     <section class="hero p-5 text-center text-sm-start">
         <div class="container">
             <div class="d-flex">
                 <div>
                     <h1 class=""><u>Hello!</u></h1>
                     <p class=" lead my-4">
-                        My name is Juan Grimaldo, but you can call me Alex. I am majoring in Business and Information Technology at Tennessee Tech University.
+                        My name is Juan Grimaldo, but you can call me Alex. I am a senior majoring in Business and Information Technology at Tennessee Tech University.
+                        I enjoy fron-end development and design, as well as server-side languages.
                     </p>
                     <button class="btn btn-lg" type="button" aria-labelledby="Contact" id="btnContact">Contact Me!</button>
                 </div>
@@ -64,24 +66,26 @@
             <div class="row text-center g-4 pt-5">
                 <div class="col-lg-6 col-md">
                     <div class="card h-100">
-                        <div class="card-header h-100">
-                            <h1>Tennessee Technological University</h1>
+                        <div class="tech-header">
+                            <h1 class="p-2">Tennessee Technological University</h1>
                         </div>
                         <div class="card-body">
-                            Majoring in Business and Information Technology
-                            Minor in Business Management and Social Science
-                            GPA: 3.63
+                            <h3>August 2021 - May 2023</h3>
+                            <p>Majoring in Business and Information Technology</p>
+                            <p>Minor in Business Management and Social Science</p>
+                            <p><b>GPA:</b> 3.63</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md">
                     <div class="card h-100">
-                        <div class="card-header h-100">
-                            <h1>Pellissippi State Community</h1>
+                        <div class="pstcc-header">
+                            <h1 class="p-2">Pellissippi State Community College</h1>
                         </div>
                         <div class="card-body">
-                            Associate's Degree in Accounting
-                            GPA: 3.54
+                            <h3>August 2019 - May 2021</h3>
+                            <p>Associate's Degree in Accounting</p>
+                            <p><b>GPA:</b> 3.54</p>
                         </div>
                     </div>
                 </div>
@@ -92,48 +96,53 @@
     <section class="p-5 text-center text-sm-start proj" id="currentProjects">
         <div class="container">
             <h1 class="text-center">The Exceptional Bean</h1>
+            <p class="text-center">
+                For my senior project, I have been working with The Exceptional Bean, a non-profit coffee shop with the mission of employing individuals with disabilities.
+                As a developer, I was in charge of transitioning their website hosting from Wix to Square Online. I also worked with Square APIs to pull information from
+                their catalog to display items with their size and price, as well as the flavor options.
+            </p>
             <div class="row text-center g-4 pt-5">
                 <div class="col-md">
-                    <div class="card h-100">
+                    <div class="card text-dark h-100">
                         <div class="card-header">
-                            <h1 class="text-dark">Website</h1>
+                            <h1>Digital Menu</h1>
+                        </div>
+                        <img src="img/Menu.png" alt="Exceptional Bean Menu" class="img-fluid">
+                        <div class="card-body">
+                            <div class="card-text">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">View Digital Menu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card text-dark h-100">
+                        <div class="card-header">
+                            <h1>Website</h1>
                         </div>
                         <h1 class="image">
                             <img src="img/ExceptionalBeanHome.png" alt="Exceptional Bean Website Image" class="img-fluid">
                         </h1>
-                        <div class="card-body text-dark">
-                            Overhauled the business’s website by using images and including items from Square System
+                        <div class="card-body">
+                            <div class="card-text">Overhauled the business’s website by using images and including items from Square System</div>
                         </div>
                         <div class="card-footer">
-                            <button onclick="location.href='https://theexceptionalbeancookeville.com/';" class="btn btn-cards btn-lg" type="button" aria-labelledby="Contact">View Website</button>
+                            <button onclick="location.href='https://theexceptionalbeancookeville.com/';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Website" id="btnWebsite">View Website</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card h-100">
+                    <div class="card text-dark h-100">
                         <div class="card-header">
-                            <h1 class="text-dark">Digital Menu</h1>
-                        </div>
-                        <img src="img/Menu.png" alt="Exceptional Bean Menu" class="img-fluid">
-                        <div class="card-body text-dark">
-                            Designed and implemented a digital menu that transitions to a screensaver after store hours
-                        </div>
-                        <div class="card-footer">
-                            <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menu.html';" class="btn btn-cards btn-lg" type="button" aria-labelledby="Contact">View Digital Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h1 class="text-dark">Menu Editor</h1>
+                            <h1>Menu Editor</h1>
                         </div>
                         <img src="img/MenuBuilder.png" alt="Exceptional Bean Menu Editor" class="img-fluid">
-                        <div class="card-body text-dark">
-                            Created a menu builder that allows users to upload images for screensaver
+                        <div class="card-body">
+                            <div class="card-text">Created a menu builder that allows users to upload images for screensaver.</div>
                         </div>
                         <div class="card-footer">
-                            <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-lg" type="button" aria-labelledby="Contact">View Menu Builder Demo</button>
+                            <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Menu Builder" id="btnMenuBuilder">View Menu Builder Demo</button>
                         </div>
                     </div>
                 </div>
@@ -148,58 +157,57 @@
                 Skills
                 <i class="bi bi-database"></i>
             </h1>
+            <p class="text-center">
+                While I enjoy working on front-end development, I am also working on improving my skills in back-end development. 
+                I have been attending sessions where we work with Node.js to develop programs that are in use at Tennessee Tech. 
+                I also worked with PHP to develop APIs that pull data from Square. 
+            </p>
             <h3 class="text">HTML5</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-success" role="progressBar" style="width: 90%">90%</div>
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
             </div>
             <h3 class="text mt-2">CSS3</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" role="progressBar" style="width: 75%">75%</div>
+                <div class="progress-bar bg-warning" style="width: 75%">75%</div>
             </div>
             <h3 class="text mt-2">Javascript</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" role="progressBar" style="width: 70%">70%</div>
+                <div class="progress-bar bg-warning" style="width: 70%">70%</div>
             </div>
             <h3 class="text mt-2">jQuery</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" role="progressBar" style="width: 70%">70%</div>
+                <div class="progress-bar bg-warning" style="width: 70%">70%</div>
             </div>
             <h3 class="text mt-2">MySQL</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" role="progressBar" style="width: 60%">60%</div>
+                <div class="progress-bar bg-warning" style="width: 60%">60%</div>
             </div>
             <h3 class="text mt-2">PHP</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-danger" role="progressBar" style="width: 30%">30%</div>
+                <div class="progress-bar bg-danger" style="width: 30%">30%</div>
             </div>
             <h3 class="text mt-2">Node.JS</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-danger" role="progressBar" style="width: 20%">20%</div>
+                <div class="progress-bar bg-danger" style="width: 20%">20%</div>
             </div>
         </div>
     </section>
-    <!-- Contact -->
-    <section class="p-5 text-center" id="contact">
+    <!-- Footer/Contact -->
+    <footer class="footer p-5 dark-bg text-light text-center position-realtive" id="contact">
         <div class="container">
             <h1 class="text-center mb-5">Contact Me</h1>
-            <div class="row text-center">
-                <div class="card col-12">
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <!-- Use email signature format -->
-                        </div>
-                    </div>
+            <div class="text-center">
+                <div class="row text-center">
+                    <h1>Juan (Alex) Grimaldo</h1>
+                    <h5><i class="bi bi-envelope-fill"></i> : <a href="mailto: grimaldoj53@gmail.com?subject=Hello" id="email" aria-label="Email Address">grimaldoj53@gmail.com</a></h5>
+                    <h5>
+                        <a href="www.linkedin.com/in/alex-grimaldo" aria-lable="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </h5>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer p-5 dark-bg text-light text-center position-realtive">
-        <div class="container">
             <p class="lead">Copyright &copy; 2023</p>
-            <!-- <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up h1"></i>
-            </a> -->
         </div>
     </footer>
     <script src="lib/bootstrap.min.js"></script>
