@@ -23,6 +23,10 @@
     --yellow: #FFDD00;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--antiWhite);
     font-family: 'Quicksand', sans-serif;
@@ -37,6 +41,21 @@ body {
     background-color: var(--paynesGray);
     border-left: 6px solid var(--coral);
     color: white
+}
+
+.int {
+    position: relative;
+    padding: 5%;
+    background-color: #3d475a;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+}
+
+.dark-int {
+    padding: 5%;
+    background-color: #002139;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
 }
 
 .navbar-brand, .nav-link {
@@ -57,6 +76,7 @@ body {
 .btn {
     background-color: var(--coral);
     color: rgb(255, 254, 254);
+    margin-top: 5px;
 }
 
 .btn-cards {
@@ -69,18 +89,20 @@ body {
     color: white;
 }
 
-.tech-header {
+.tech-container {
     background-color: var(--techPurple);
     color: var(--yellow);
 }
 
-.pstcc-header {
+.pstcc-container {
     background-color: var(--pstccBlue);
     color: var(--yellow);
 }
 
-.tech-header, .pstcc-header {
+.tech-container, .pstcc-container {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-left: 5px solid var(--yellow);
+    border-radius: 10px;
 }
 
 /* Dark Mode CSS Start */
@@ -96,7 +118,7 @@ body {
 }
 
 .dark-mode-body {
-    background-color: rgb(30,30,30);
+    background-color: #292929;
     color: white
 }
 
@@ -115,30 +137,30 @@ body {
 }
 
 .dark-mode-cardTitle {
-    background-color: var(--silver);
+    background-color: #002139;
     color: aliceblue;
 }
 
 .dark-mode-cardHeader {
-    background-color: var(--silver);
+    background-color: #002139;
     color: aliceblue;
 }
 
 .dark-mode-cardBody {
-    background-color: var(--silver);
+    background-color: #002139;
     border-top: none;
     color: aliceblue;
 }
 
 .dark-mode-cardFooter {
-    background-color: var(--silver);
+    background-color: #002139;
     border-top: none;
     color: aliceblue;
 }
 
 /* Dark Mode CSS End */
 
-body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer {
+body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .int {
     transition: 0.2s;
 }
 
@@ -169,9 +191,13 @@ body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer {
     transform-origin: center;
 }
 
+img {
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
 img:hover {
     z-index: 5;
-    transition: 0.5s;
     transform: scale(1.2);
 }
 

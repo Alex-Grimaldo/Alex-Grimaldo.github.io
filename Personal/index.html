@@ -48,9 +48,9 @@
     <section class="hero p-5 text-center text-sm-start">
         <div class="container">
             <div class="d-flex">
-                <div>
+                <div class="int">
                     <h1 class=""><u>Hello!</u></h1>
-                    <p class=" lead my-4">
+                    <p class="lead my-4">
                         My name is Juan Grimaldo, but you can call me Alex. I am a senior majoring in Business and Information Technology at Tennessee Tech University.
                         I enjoy fron-end development and design, as well as server-side languages.
                     </p>
@@ -65,28 +65,20 @@
             <h1 class="text-center">Education</h1>
             <div class="row text-center g-4 pt-5">
                 <div class="col-lg-6 col-md">
-                    <div class="card h-100">
-                        <div class="tech-header">
-                            <h1 class="p-2">Tennessee Technological University</h1>
-                        </div>
-                        <div class="card-body">
-                            <h3>August 2021 - May 2023</h3>
-                            <p>Majoring in Business and Information Technology</p>
-                            <p>Minor in Business Management and Social Science</p>
-                            <p><b>GPA:</b> 3.63</p>
-                        </div>
+                    <div class="tech-container h-100">
+                        <h1 class="p-2">Tennessee Technological University</h1>
+                        <h3>August 2021 - May 2023</h3>
+                        <p>Majoring in Business and Information Technology</p>
+                        <p>Minor in Business Management and Social Science</p>
+                        <p><b>GPA:</b> 3.63</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md">
-                    <div class="card h-100">
-                        <div class="pstcc-header">
-                            <h1 class="p-2">Pellissippi State Community College</h1>
-                        </div>
-                        <div class="card-body">
-                            <h3>August 2019 - May 2021</h3>
-                            <p>Associate's Degree in Accounting</p>
-                            <p><b>GPA:</b> 3.54</p>
-                        </div>
+                    <div class="pstcc-container h-100">
+                        <h1 class="p-2">Pellissippi State Community College</h1>
+                        <h3>August 2019 - May 2021</h3>
+                        <p>Associate's Degree in Accounting</p>
+                        <p><b>GPA:</b> 3.54</p>
                     </div>
                 </div>
             </div>
@@ -103,47 +95,27 @@
             </p>
             <div class="row text-center g-4 pt-5">
                 <div class="col-md">
-                    <div class="card text-dark h-100">
-                        <div class="card-header">
-                            <h1>Digital Menu</h1>
-                        </div>
+                    <div class="int h-100">
+                        <h1>Digital Menu</h1>
                         <img src="img/Menu.png" alt="Exceptional Bean Menu" class="img-fluid">
-                        <div class="card-body">
-                            <div class="card-text">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">View Digital Menu</button>
-                        </div>
+                        <div class="card-text">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
+                        <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">View Digital Menu</button>
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card text-dark h-100">
-                        <div class="card-header">
-                            <h1>Website</h1>
-                        </div>
-                        <h1 class="image">
-                            <img src="img/ExceptionalBeanHome.png" alt="Exceptional Bean Website Image" class="img-fluid">
-                        </h1>
-                        <div class="card-body">
-                            <div class="card-text">Overhauled the business’s website by using images and including items from Square System</div>
-                        </div>
-                        <div class="card-footer">
-                            <button onclick="location.href='https://theexceptionalbeancookeville.com/';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Website" id="btnWebsite">View Website</button>
-                        </div>
+                    <div class="int h-100">
+                        <h1>Website</h1>
+                        <img src="img/ExceptionalBeanHome.png" alt="Exceptional Bean Website Image" class="img-fluid">
+                        <div class="card-text">Overhauled the business’s website by using images and including items from Square System</div>
+                        <button onclick="location.href='https://theexceptionalbeancookeville.com/';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Website" id="btnWebsite">View Website</button>
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card text-dark h-100">
-                        <div class="card-header">
-                            <h1>Menu Editor</h1>
-                        </div>
+                    <div class="int h-100">
+                        <h1>Menu Editor</h1>
                         <img src="img/MenuBuilder.png" alt="Exceptional Bean Menu Editor" class="img-fluid">
-                        <div class="card-body">
-                            <div class="card-text">Created a menu builder that allows users to upload images for screensaver.</div>
-                        </div>
-                        <div class="card-footer">
-                            <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Menu Builder" id="btnMenuBuilder">View Menu Builder Demo</button>
-                        </div>
+                        <div class="card-text">Created a menu builder that allows users to upload images for screensaver.</div>
+                        <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Menu Builder" id="btnMenuBuilder">View Menu Builder Demo</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +173,7 @@
                     <h1>Juan (Alex) Grimaldo</h1>
                     <h5><i class="bi bi-envelope-fill"></i> : <a href="mailto: grimaldoj53@gmail.com?subject=Hello" id="email" aria-label="Email Address">grimaldoj53@gmail.com</a></h5>
                     <h5>
-                        <a href="www.linkedin.com/in/alex-grimaldo" aria-lable="LinkedIn">
+                        <a href="https://www.linkedin.com/in/alex-grimaldo" target="_blank" aria-lable="LinkedIn">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </h5>
