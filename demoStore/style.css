@@ -1,0 +1,192 @@
+/* Theme Colors */
+:root {
+    /* Blue Theme */
+    --lightBlue: rgb(0,168,232);
+    --blue: rgb(10, 120, 238);
+    --darkBlue: rgb(0, 46, 79);
+    --richBlack: rgb(0,23,31);
+    --antiWhite: rgb(240,237,238);
+
+    /* Coral Theme */
+    --gunmetal: #2D3142;
+    --silver: #3a3a3a;
+    --antiWhite: #ffffff;
+    --coral: #2200ff;
+    --paynesGray: #4F5D75;
+
+    /* TnTech Colors */
+    --techPurple: #4f2984;
+
+    /* PSTCC Colors */
+    --pstccBlue: #004b8e;
+
+    --yellow: #FFDD00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--antiWhite);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    border-left: 6px solid var(--coral);
+}
+
+.hero {
+    background-color: var(--antiWhite);
+    border-left: 6px solid var(--coral);
+    color: var(--richBlack);
+}
+
+#itemGroup {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+}
+
+.int {
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.dark-int {
+    padding: 5%;
+    background-color: #c4c4c4;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+}
+
+.proj {
+    background-color: var(--antiWhite);
+    color: var(--richBlack);
+}
+
+.footer {
+    background-color: var(--paynesGray);
+    border-left: 6px solid var(--coral);
+    color: rgb(30,30,30);
+}
+
+.btn {
+    background-color: var(--coral);
+    color: rgb(255, 254, 254);
+    margin-top: 5px;
+}
+
+.btn-cards {
+    background-color: var(--coral);
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    background-color: var(--coral);
+    color: white;
+}
+
+/* Dark Mode CSS Start */
+
+/* .dark-mode-nav {
+    background-color: var(--darkBlue);
+    border-left: 6px solid var(--coral);
+}
+
+.dark-mode-hero {
+    background-color: var(--darkBlue);
+    border-left: 6px solid var(--coral);
+}
+
+.dark-mode-body {
+    background-color: #292929;
+    color: white
+}
+
+.dark-mode-container {
+    background-color: var(--darkBlue);
+}
+
+.dark-mode-footer {
+    background-color: var(--darkBlue);
+    border-left: 6px solid var(--coral);
+    color: aliceblue;
+}
+
+.dark-mode-cardBorder {
+    border-color: black;
+}
+
+.dark-mode-cardTitle {
+    background-color: #002139;
+    color: aliceblue;
+}
+
+.dark-mode-cardHeader {
+    background-color: #002139;
+    color: aliceblue;
+}
+
+.dark-mode-cardBody {
+    background-color: #002139;
+    border-top: none;
+    color: aliceblue;
+}
+
+.dark-mode-cardFooter {
+    background-color: #002139;
+    border-top: none;
+    color: aliceblue;
+} */
+
+/* Dark Mode CSS End */
+
+body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .int {
+    transition: 0.2s;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: var(--richBlack);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--coral);
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+img {
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+img:hover {
+    z-index: 5;
+    transform: scale(1.2);
+}
+
+.product {
+    width: 250px;
+}
+
+#email {
+    color: aliceblue;
+}
+
+#email:hover {
+    color:rgb(10, 120, 238);
+}
