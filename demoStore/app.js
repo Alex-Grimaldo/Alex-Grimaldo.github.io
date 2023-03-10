@@ -3,7 +3,6 @@ $('#btnDarkMode').on('click', function(){
     $('.card').toggleClass('dark-mode-cardBorder');
     $('.navbar, .hero').toggleClass('dark-mode-nav');
     $('.hero').toggleClass('dark-mode-hero');
-    $('.int').toggleClass('dark-int');
     $('.footer').toggleClass('dark-mode-footer');
     $('.card-title').toggleClass('dark-mode-cardTitle');
     $('.card-body').toggleClass('dark-mode-cardBody');

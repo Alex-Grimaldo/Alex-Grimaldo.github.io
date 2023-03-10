@@ -52,13 +52,6 @@ body {
     border-radius: 10px;
 }
 
-.dark-int {
-    padding: 5%;
-    background-color: #c4c4c4;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    border-radius: 10px;
-}
-
 .proj {
     background-color: var(--antiWhite);
     color: var(--richBlack);
