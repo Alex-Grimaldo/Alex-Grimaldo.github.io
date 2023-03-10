@@ -28,6 +28,7 @@ $('#btnDarkMode').on('click', function(){
 /* Get all Products */
 $.getJSON('https://fakestoreapi.com/products', function(result){
     $.each(result, function(i, items){
+        //console.log(items);
         let strHTML = `
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
@@ -37,7 +38,7 @@ $.getJSON('https://fakestoreapi.com/products', function(result){
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">` + items.title + `</h5>
-                            <p class="card-text"><small class="text-muted">` + items.price + `</small></p>
+                            <p class="card-text"><small class="text-muted">$` + items.price + `</small></p>
                         </div>
                     </div>
                 </div>
@@ -55,15 +56,21 @@ $.getJSON('https://fakestoreapi.com/products/categories', function(result){
         `;
         $('#liCategories').append(strHTML);
     })
-    console.log(result);
 })
 
 /* Get all Users */
 $.getJSON('https://fakestoreapi.com/users', function(result){
-    //console.log(result);
+    console.log(result);
 })
 
 /* Login Authorization */
+
+/* 
+    Two users: Username and Password
+    If successful, return token
+    else return error
+*/
+
 /* $.getJSON('https://fakestoreapi.com/auth/login', function(result){
     
 }) */
