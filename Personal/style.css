@@ -1,30 +1,19 @@
 /* Theme Colors */
 :root {
-    /* Blue Theme */
-    --lightBlue: rgb(0,168,232);
-    --blue: rgb(10, 120, 238);
-    --darkBlue: rgb(0, 46, 79);
-    --richBlack: rgb(0,23,31);
-    --antiWhite: rgb(240,237,238);
-
     /* Coral Theme */
     --gunmetal: #2D3142;
     --silver: #3a3a3a;
     --antiWhite: #ffffff;
     --coral: #EF8354;
     --paynesGray: #4F5D75;
+    --darkBlue: #002E4F;
+    --yellow: #FFDD00;
 
     /* TnTech Colors */
     --techPurple: #4f2984;
 
     /* PSTCC Colors */
     --pstccBlue: #004b8e;
-
-    --yellow: #FFDD00;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +33,6 @@ body {
 }
 
 .int {
-    position: relative;
     padding: 5%;
     background-color: #3d475a;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -160,7 +148,7 @@ body {
 
 /* Dark Mode CSS End */
 
-body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .int {
+body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .int, .proj {
     transition: 0.2s;
 }
 

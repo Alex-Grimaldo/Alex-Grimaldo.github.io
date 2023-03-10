@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="lib/jquery-ui-1.13.2/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script defer src="lib/bootstrap.min.js"></script>
+    <script defer src="lib/jquery-3.6.0.min.js"></script>
+    <script defer src="lib/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script defer src="lib/sweetalert.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body class="" id="body">
     <!-- Navbar -->
@@ -25,19 +30,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navMenu" toggle="collapse" data-target=".navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-itme">
+                    <li class="nav-item">
                         <a href="#education" class="nav-link text-light">Education</a>
                     </li>
-                    <li class="nav-itme">
+                    <li class="nav-item">
                         <a href="#currentProjects" class="nav-link">Current Projects</a>
                     </li>
-                    <li class="nav-itme">
+                    <li class="nav-item">
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
-                    <li class="nav-itme">
+                    <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-itme p-1">
+                    <li class="nav-item">
                         <button class="btn btn-sm" type="button" id="btnDarkMode" aria-labelledby="Toggle dark and light mode">Dark Mode<i class="mx-1 bi bi-circle-half"></i></button>
                     </li>
                 </ul>
@@ -52,7 +57,7 @@
                     <h1 class=""><u>Hello!</u></h1>
                     <p class="lead my-4">
                         My name is Juan Grimaldo, but you can call me Alex. I am a senior majoring in Business and Information Technology at Tennessee Tech University.
-                        I enjoy fron-end development and design, as well as server-side languages.
+                        I enjoy fron-end development and design, as well as learning more about server side languages like PHP and Node.js. 
                     </p>
                     <button class="btn btn-lg" type="button" aria-labelledby="Contact" id="btnContact">Contact Me!</button>
                 </div>
@@ -60,11 +65,11 @@
         </div>
     </section>
     <!-- Education -->
-    <section class="p-5 text-center text-sm-start" id="education">
+    <section class="p-5 text-sm-start" id="education">
         <div class="container">
             <h1 class="text-center">Education</h1>
             <div class="row text-center g-4 pt-5">
-                <div class="col-lg-6 col-md">
+                <div class="col-lg-6">
                     <div class="tech-container h-100">
                         <h1 class="p-2">Tennessee Technological University</h1>
                         <h3>August 2021 - May 2023</h3>
@@ -73,7 +78,7 @@
                         <p><b>GPA:</b> 3.63</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md">
+                <div class="col-lg-6">
                     <div class="pstcc-container h-100">
                         <h1 class="p-2">Pellissippi State Community College</h1>
                         <h3>August 2019 - May 2021</h3>
@@ -88,17 +93,17 @@
     <section class="p-5 text-center text-sm-start proj" id="currentProjects">
         <div class="container">
             <h1 class="text-center">The Exceptional Bean</h1>
-            <p class="text-center">
+            <p class="text-center pt-5">
                 For my senior project, I have been working with The Exceptional Bean, a non-profit coffee shop with the mission of employing individuals with disabilities.
-                As a developer, I was in charge of transitioning their website hosting from Wix to Square Online. I also worked with Square APIs to pull information from
+                As a developer, I was in charge of transitioning their website hosting from Wix to Square Online, as well as redesigning their website. I also worked with Square APIs to pull information from
                 their catalog to display items with their size and price, as well as the flavor options.
             </p>
-            <div class="row text-center g-4 pt-5">
+            <div class="row text-center pt-5">
                 <div class="col-md">
                     <div class="int h-100">
                         <h1>Digital Menu</h1>
                         <img src="img/Menu.png" alt="Exceptional Bean Menu" class="img-fluid">
-                        <div class="card-text">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
+                        <div class="card-text mt-3">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
                         <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">View Digital Menu</button>
                     </div>
                 </div>
@@ -106,7 +111,7 @@
                     <div class="int h-100">
                         <h1>Website</h1>
                         <img src="img/ExceptionalBeanHome.png" alt="Exceptional Bean Website Image" class="img-fluid">
-                        <div class="card-text">Overhauled the business’s website by using images and including items from Square System</div>
+                        <div class="card-text mt-3">Overhauled the business’s website by using images and including items from Square System</div>
                         <button onclick="location.href='https://theexceptionalbeancookeville.com/';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Website" id="btnWebsite">View Website</button>
                     </div>
                 </div>
@@ -114,7 +119,7 @@
                     <div class="int h-100">
                         <h1>Menu Editor</h1>
                         <img src="img/MenuBuilder.png" alt="Exceptional Bean Menu Editor" class="img-fluid">
-                        <div class="card-text">Designed a menu builder that allows users to upload images for screensaver.</div>
+                        <div class="card-text mt-3">Designed a menu editor that allows users to upload images to display on a screensaver</div>
                         <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Menu Builder" id="btnMenuBuilder">View Menu Builder Demo</button>
                     </div>
                 </div>
@@ -129,10 +134,9 @@
                 Skills
                 <i class="bi bi-database"></i>
             </h1>
-            <p class="text-center">
+            <p class="text-center pt-5">
                 While I enjoy working on front-end development, I am also working on improving my skills in back-end development. 
-                I have been attending sessions where we work with Node.js to develop programs that are in use at Tennessee Tech. 
-                I also worked with PHP to develop APIs that pull data from Square. 
+                I have been attending sessions where we work with Node.js to develop programs that are in use at Tennessee Tech.
             </p>
             <h3 class="text">HTML5</h3>
             <div class="progress bg-secondary">
@@ -168,24 +172,17 @@
     <footer class="footer p-5 dark-bg text-light text-center position-realtive" id="contact">
         <div class="container">
             <h1 class="text-center mb-5">Contact Me</h1>
-            <div class="text-center">
-                <div class="row text-center">
-                    <h1>Juan (Alex) Grimaldo</h1>
-                    <h5><i class="bi bi-envelope-fill"></i> : <a href="mailto: grimaldoj53@gmail.com?subject=Hello" id="email" aria-label="Email Address">grimaldoj53@gmail.com</a></h5>
-                    <h5>
-                        <a href="https://www.linkedin.com/in/alex-grimaldo" target="_blank" aria-lable="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </h5>
-                </div>
+            <div class="row text-center">
+                <h1>Juan (Alex) Grimaldo</h1>
+                <h5><i class="bi bi-envelope-fill"></i> : <a href="mailto: grimaldoj53@gmail.com?subject=Hello" id="email" aria-label="Email Address">grimaldoj53@gmail.com</a></h5>
+                <h5>
+                    <a href="https://www.linkedin.com/in/alex-grimaldo" target="_blank" aria-lable="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </h5>
             </div>
             <p class="lead">Copyright &copy; 2023</p>
         </div>
     </footer>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/jquery-3.6.0.min.js"></script>
-    <script src="lib/jquery-ui-1.13.2/jquery-ui.min.js"></script>
-    <script src="lib/sweetalert.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>

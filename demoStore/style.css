@@ -34,6 +34,7 @@ body {
 
 .navbar {
     border-left: 6px solid var(--coral);
+    backdrop-filter: blur(8px);
 }
 
 .hero {
@@ -47,6 +48,14 @@ body {
     border-radius: 10px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1.2fr);
+    grid-auto-rows: 45%;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
 .int {
     padding: 5%;
     border-radius: 10px;
@@ -58,7 +67,7 @@ body {
 }
 
 .footer {
-    background-color: var(--paynesGray);
+    background-color: var(--antiWhite);
     border-left: 6px solid var(--coral);
     color: rgb(30,30,30);
 }
@@ -174,10 +183,6 @@ img:hover {
 
 .product {
     width: 250px;
-}
-
-#email {
-    color: aliceblue;
 }
 
 #email:hover {

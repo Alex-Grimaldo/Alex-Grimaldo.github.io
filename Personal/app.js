@@ -44,6 +44,7 @@ $('#btnContact').click(function(){
             `
         },
         showConfirmButton: false,
+        showCloseButton: true,
         timerProgressBar: true,
         html: 
             `
@@ -85,3 +86,7 @@ $('#btnMenu').click(function(){
         }
     })
 })
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}

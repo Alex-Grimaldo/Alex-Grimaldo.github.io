@@ -29,11 +29,18 @@ $('#btnDarkMode').on('click', function(){
 $.getJSON('https://fakestoreapi.com/products', function(result){
     $.each(result, function(i, items){
         let strHTML = `
-            <div class="col-xl-3 col-lg-4 col-md-6 int gx-5">
-                <h3>`+ items.title + `</h3>
-                <img src="` + items.image + `" alt="Exceptional Bean Menu" class="img-fluid product">
-                <div class="card-text">$` + items.price + `</div>
-                <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">Add to Cart</button>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-3 justify-content-center align-items-center d-flex">
+                        <img src="` + items.image + `" class="img-fluid rounded-start" alt="img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">` + items.title + `</h5>
+                            <p class="card-text"><small class="text-muted">` + items.price + `</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         `;
         $('#cardItems').append(strHTML);
