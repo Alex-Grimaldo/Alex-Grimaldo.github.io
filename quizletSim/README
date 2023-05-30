@@ -1,0 +1,19 @@
+The following program is intended to mimic the online study tool Quizlet.
+
+Goals: 
+
+1. Store user input in a database
+2. Utilize CRUD for persistent storage
+3. Ability to work on both desktop and mobile
+4. Login function to view history
+
+Use the following: 
+
+* HTML
+* CSS
+* JavaScript/jQuery
+* SweetAlert2
+* node.js
+* MySQL
+* Bootstrap 5
+* Tailwind?

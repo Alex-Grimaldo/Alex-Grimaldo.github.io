@@ -22,38 +22,33 @@ body {
 }
 
 .navbar {
-    background-color: var(--paynesGray);
+    background-color: var(--antiWhite);
     border-left: 6px solid var(--coral);
 }
 
 .hero {
-    background-color: var(--paynesGray);
     border-left: 6px solid var(--coral);
-    color: white
 }
 
+/* Card Background */
 .int {
     padding: 5%;
-    background-color: #3d475a;
+    background-color: rgb(226, 226, 226);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 10px;
 }
 
 .dark-int {
     padding: 5%;
-    background-color: #002139;
+    background-color: #535557;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 10px;
 }
 
-.navbar-brand, .nav-link {
-    color: white;
-}
-
-.proj {
+/* .proj {
     background-color: var(--paynesGray);
     color: aliceblue;
-}
+} */
 
 .footer {
     background-color: var(--paynesGray);
@@ -96,26 +91,26 @@ body {
 /* Dark Mode CSS Start */
 
 .dark-mode-nav {
-    background-color: var(--darkBlue);
+    background-color: rgb(104, 104, 104);
     border-left: 6px solid var(--coral);
 }
 
 .dark-mode-hero {
-    background-color: var(--darkBlue);
+    background-color: rgb(104, 104, 104);
     border-left: 6px solid var(--coral);
 }
 
 .dark-mode-body {
-    background-color: #292929;
+    background-color: rgb(104, 104, 104);
     color: white
 }
 
 .dark-mode-container {
-    background-color: var(--darkBlue);
+    background-color: rgb(104, 104, 104);
 }
 
 .dark-mode-footer {
-    background-color: var(--darkBlue);
+    background-color: rgb(104, 104, 104);
     border-left: 6px solid var(--coral);
     color: aliceblue;
 }
@@ -135,7 +130,7 @@ body {
 }
 
 .dark-mode-cardBody {
-    background-color: #002139;
+    background-color: var(--darkBlue);
     border-top: none;
     color: aliceblue;
 }
@@ -184,18 +179,8 @@ img {
     transition: 0.3s;
 }
 
-img:hover {
-    z-index: 5;
-    transform: scale(1.2);
-}
-
 #profilePhoto {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    filter: grayscale(1);
-}
-
-#profilePhoto:hover {
-    filter: grayscale(0);
 }
 
 #email {
@@ -204,4 +189,12 @@ img:hover {
 
 #email:hover {
     color:rgb(10, 120, 238);
+}
+
+.btn:has(i) {
+    background-color: #6e5494;
+}
+
+.btn:has(i):hover {
+    background-color: #6e5494;
 }

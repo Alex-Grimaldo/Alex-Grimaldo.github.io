@@ -24,14 +24,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a href="#body" class="navbar-brand text-white">Alex Grimaldo</a>
+            <a href="#body" class="navbar-brand">Alex Grimaldo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Navigation Bar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu" toggle="collapse" data-target=".navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#education" class="nav-link text-light">Education</a>
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
                         <a href="#currentProjects" class="nav-link">Current Projects</a>
@@ -94,15 +94,30 @@
             </div>
         </div>
     </section>
-    <!-- Projects -->
-    <section class="p-5 text-center text-sm-start proj" id="currentProjects">
+    <!-- Capstone -->
+    <section class="p-5 text-center">
         <div class="container">
-            <h1 class="text-center">The Exceptional Bean</h1>
-            <p class="text-center pt-5">
-                For my senior project, I have been working with The Exceptional Bean, a non-profit coffee shop with the mission of employing individuals with disabilities.
-                As a developer, I was in charge of transitioning their website hosting from Wix to Square Online, as well as redesigning their website. I also worked with Square APIs to pull information from
-                their catalog to display items with their size and price, as well as the flavor options.
-            </p>
+            <h1 class="text-center"><u>The Exceptional Bean</u></h1>
+            <div class="row int mt-md-5">
+                <div class="col-sm-12 col-md-6 justify-content-center align-items-center d-flex">
+                    <p class="text-center pt-5">
+                        For my senior project, I worked in a team with The Exceptional Bean, a non-profit coffee shop with the mission of employing individuals with disabilities.
+                        As a member of the development team, I was in charge of transitioning their website hosting from Wix to Square Online, as well as redesigning their website. I also worked with Square APIs to pull information from
+                        their catalog to display items with their size and price, as well as the flavor options.
+
+                        To learn more about the project, <a href="https://www.tntech.edu/news/releases/22-23/tech-students-complete-two-semester-partnership-with-the-exceptional-bean.php">click here</a>.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 justify-content-center align-items-center d-flex">
+                    <img src="img/Capstone Picture.jpg" style="max-width: 100%; height: auto;" alt="CapstoneGroup">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="p-5 text-center text-sm-start" id="currentProjects">
+        <div class="container">
+            <h1 class="text-center">My Projects</h1>
             <div class="row text-center pt-5">
                 <div class="col-md mb-lg-0 mb-sm-5">
                     <div class="int h-100">
@@ -110,6 +125,7 @@
                         <img src="img/Menu.png" alt="Exceptional Bean Menu" class="img-fluid">
                         <div class="card-text mt-3">Designed and implemented a digital menu that transitions to a screensaver after store hours</div>
                         <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu" id="btnMenu">View Digital Menu</button>
+                        <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Digital Menu Code" id="btnMenuCode"><i class="bi bi-github"></i> View Code</button>
                     </div>
                 </div>
                 <div class="col-md mb-lg-0 mb-sm-5">
@@ -125,7 +141,8 @@
                         <h1>Menu Editor</h1>
                         <img src="img/MenuBuilder.png" alt="Exceptional Bean Menu Editor" class="img-fluid">
                         <div class="card-text mt-3">Designed a menu editor that allows users to upload images to display on a screensaver</div>
-                        <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Menu Builder" id="btnMenuBuilder">View Demo</button>
+                        <button onclick="location.href='https://exceptionalbean.swollenhippo.com/alexMenu/Menu/menubuilder.html';" class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Screensaver" id="btnMenuBuilder">View Demo</button>
+                        <button class="btn btn-cards btn-md" type="button" aria-labelledby="Button to Screensaver Code" id="btnScreenSaverCode"><i class="bi bi-github"></i> View Code</button>
                     </div>
                 </div>
             </div>
@@ -145,36 +162,36 @@
             </p>
             <h3 class="text">HTML5</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+                <div class="progress-bar" style="width: 90%">90%</div>
             </div>
             <h3 class="text mt-2">CSS3</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" style="width: 75%">75%</div>
+                <div class="progress-bar" style="width: 75%">75%</div>
             </div>
             <h3 class="text mt-2">Javascript</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+                <div class="progress-bar" style="width: 70%">70%</div>
             </div>
             <h3 class="text mt-2">jQuery</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+                <div class="progress-bar" style="width: 70%">70%</div>
             </div>
             <h3 class="text mt-2">MySQL</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-warning" style="width: 60%">60%</div>
+                <div class="progress-bar" style="width: 60%">60%</div>
             </div>
             <h3 class="text mt-2">PHP</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-danger" style="width: 30%">30%</div>
+                <div class="progress-bar" style="width: 30%">30%</div>
             </div>
             <h3 class="text mt-2">Node.JS</h3>
             <div class="progress bg-secondary">
-                <div class="progress-bar bg-danger" style="width: 20%">20%</div>
+                <div class="progress-bar" style="width: 20%">20%</div>
             </div>
         </div>
     </section>
     <!-- Footer/Contact -->
-    <footer class="footer p-5 dark-bg text-light text-center position-realtive" id="contact">
+    <footer class="footer p-5 text-light text-center position-realtive" id="contact">
         <div class="container">
             <h1 class="text-center mb-5">Contact Me</h1>
             <div class="row text-center">
