@@ -165,10 +165,6 @@ body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .i
     transition: transform 0.25s ease-out;
 }
 
-.nav-link:hover {
-    color: white;
-}
-
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: center;
