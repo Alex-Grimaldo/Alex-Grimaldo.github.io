@@ -14,6 +14,10 @@
 
     /* PSTCC Colors */
     --pstccBlue: #004b8e;
+
+    /* Dark mode Colors */
+    --darkBG: #0b1b23;
+    --darkCard: #193e51;
 }
 
 body {
@@ -32,23 +36,24 @@ body {
 
 /* Card Background */
 .int {
+    color: white;
     padding: 5%;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--paynesGray);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 10px;
 }
 
 .dark-int {
     padding: 5%;
-    background-color: #535557;
+    background-color: var(--darkCard);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 10px;
 }
 
-/* .proj {
-    background-color: var(--paynesGray);
-    color: aliceblue;
-} */
+.navbar-toggler {
+    background-color: var(--gunmetal);
+    color: white;
+}
 
 .footer {
     background-color: var(--paynesGray);
@@ -90,54 +95,37 @@ body {
 
 /* Dark Mode CSS Start */
 
+.dark-toggler {
+    background-color: var(--coral);
+    color: white;
+}
+
 .dark-mode-nav {
-    background-color: rgb(104, 104, 104);
+    background-color: var(--darkBG);
     border-left: 6px solid var(--coral);
 }
 
+.dark-nav-link {
+    color: white;
+}
+
 .dark-mode-hero {
-    background-color: rgb(104, 104, 104);
+    background-color: var(--darkBG);
     border-left: 6px solid var(--coral);
 }
 
 .dark-mode-body {
-    background-color: rgb(104, 104, 104);
+    background-color: var(--darkBG);
     color: white
 }
 
 .dark-mode-container {
-    background-color: rgb(104, 104, 104);
+    background-color: var(--darkBG);
 }
 
 .dark-mode-footer {
-    background-color: rgb(104, 104, 104);
+    background-color: var(--darkCard);
     border-left: 6px solid var(--coral);
-    color: aliceblue;
-}
-
-.dark-mode-cardBorder {
-    border-color: black;
-}
-
-.dark-mode-cardTitle {
-    background-color: #002139;
-    color: aliceblue;
-}
-
-.dark-mode-cardHeader {
-    background-color: #002139;
-    color: aliceblue;
-}
-
-.dark-mode-cardBody {
-    background-color: var(--darkBlue);
-    border-top: none;
-    color: aliceblue;
-}
-
-.dark-mode-cardFooter {
-    background-color: #002139;
-    border-top: none;
     color: aliceblue;
 }
 
@@ -168,11 +156,6 @@ body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .i
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: center;
-}
-
-img {
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
 #profilePhoto {

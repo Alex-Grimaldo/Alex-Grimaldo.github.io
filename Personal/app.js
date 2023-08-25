@@ -5,24 +5,10 @@ $('#btnDarkMode').on('click', function(){
     $('.hero').toggleClass('dark-mode-hero');
     $('.int').toggleClass('dark-int');
     $('.footer').toggleClass('dark-mode-footer');
-    $('.card-title').toggleClass('dark-mode-cardTitle');
-    $('.card-body').toggleClass('dark-mode-cardBody');
     $('#currentProjects').toggleClass('dark-mode-container');
-
-    var cards = $('.card-header');
-    for (let i = 0; i < cards.length; i++){
-        cards[i].classList.toggle('dark-mode-cardHeader');
-    }
-
-    var cards = $('.card-body');
-    for (let i = 0; i < cards.length; i++){
-        cards[i].classList.toggle('dark-mode-card');
-    }
-
-    var cards = $('.card-footer');
-    for (let i = 0; i < cards.length; i++){
-        cards[i].classList.toggle('dark-mode-cardFooter');
-    }
+    $('.nav-link').toggleClass('dark-nav-link');
+    $('.navbar-brand').toggleClass('dark-nav-link');
+    $('.navbar-toggler').toggleClass('dark-toggler');
 })
 
 $('#btnContact').click(function(){
@@ -86,7 +72,3 @@ $('#btnMenu').click(function(){
         }
     })
 })
-
-function myFunction(x) {
-    x.classList.toggle("change");
-}
