@@ -5,7 +5,7 @@
     --silver: #3a3a3a;
     --antiWhite: #ffffff;
     --coral: #EF8354;
-    --paynesGray: #4F5D75;
+    --paynesGray: #e1e1e2;
     --darkBlue: #002E4F;
     --yellow: #FFDD00;
 
@@ -36,7 +36,7 @@ body {
 
 /* Card Background */
 .int {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5%;
     background-color: var(--paynesGray);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -44,6 +44,7 @@ body {
 }
 
 .dark-int {
+    color: white;
     padding: 5%;
     background-color: var(--darkCard);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -94,6 +95,10 @@ body {
 }
 
 /* Dark Mode CSS Start */
+
+.btn-theme-toggle {
+    background-color: rgb(149, 149, 149);
+}
 
 .dark-toggler {
     background-color: var(--coral);
@@ -160,20 +165,4 @@ body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .i
 
 #profilePhoto {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-#email {
-    color: aliceblue;
-}
-
-#email:hover {
-    color:rgb(10, 120, 238);
-}
-
-.btn:has(i) {
-    background-color: #6e5494;
-}
-
-.btn:has(i):hover {
-    background-color: #6e5494;
 }

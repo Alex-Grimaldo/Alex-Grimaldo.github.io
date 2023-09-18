@@ -7,7 +7,9 @@ $('#btnDarkMode').on('click', function(){
     $('.card-title').toggleClass('dark-mode-cardTitle');
     $('.card-body').toggleClass('dark-mode-cardBody');
     $('#currentProjects').toggleClass('dark-mode-container');
-
+    $('.card-header').toggleClass('dark-mode-cardHeader');
+    $('.card-body').toggleClass('dark-mode-card');
+    $('.card-footer').toggleClass('dark-mode-cardFooter')
     var cards = $('.card-header');
     for (let i = 0; i < cards.length; i++){
         cards[i].classList.toggle('dark-mode-cardHeader');
