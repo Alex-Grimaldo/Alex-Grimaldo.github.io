@@ -5,7 +5,7 @@
     --silver: #3a3a3a;
     --antiWhite: #ffffff;
     --coral: #EF8354;
-    --paynesGray: #e1e1e2;
+    --paynesGray: #f7f7f7;
     --darkBlue: #002E4F;
     --yellow: #FFDD00;
 
@@ -18,15 +18,17 @@
     /* Dark mode Colors */
     --darkBG: #0b1b23;
     --darkCard: #193e51;
+
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 body {
-    background-color: var(--antiWhite);
+    background-color: var(--paynesGray);
     font-family: 'Quicksand', sans-serif;
 }
 
 .navbar {
-    background-color: var(--antiWhite);
+    background-color: var(--paynesGray);
     border-left: 6px solid var(--coral);
 }
 
@@ -38,8 +40,8 @@ body {
 .int {
     color: rgb(0, 0, 0);
     padding: 5%;
-    background-color: var(--paynesGray);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: var(--antiWhite);
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
     border-radius: 10px;
 }
 
@@ -47,7 +49,7 @@ body {
     color: white;
     padding: 5%;
     background-color: var(--darkCard);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
     border-radius: 10px;
 }
 
@@ -57,7 +59,7 @@ body {
 }
 
 .footer {
-    background-color: var(--paynesGray);
+    background-color: var(--antiWhite);
     border-left: 6px solid var(--coral);
     color: rgb(30,30,30);
 }
@@ -71,6 +73,7 @@ body {
 .btn-cards {
     background-color: var(--coral);
     color: rgb(255, 255, 255);
+    transition: 0.2s;
 }
 
 .btn:hover {
@@ -89,7 +92,7 @@ body {
 }
 
 .tech-container, .pstcc-container {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
     border-left: 5px solid var(--yellow);
     border-radius: 10px;
 }
@@ -136,7 +139,7 @@ body {
 
 /* Dark Mode CSS End */
 
-body, .card, .card-header, .card-body, .card-footer, .navbar, .hero, .footer, .int, .proj {
+body, nav, footer, section, .int, .card-header, .card-body, .card-footer, .proj {
     transition: 0.2s;
 }
 
