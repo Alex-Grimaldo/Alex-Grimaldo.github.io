@@ -5,7 +5,7 @@
     --silver: #3a3a3a;
     --antiWhite: #ffffff;
     --coral: #EF8354;
-    --paynesGray: #f7f7f7;
+    --paynesGray: #ebebeb;
     --darkBlue: #002E4F;
     --yellow: #FFDD00;
 
@@ -93,7 +93,7 @@ body {
 
 .tech-container, .pstcc-container {
     /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
-    border-left: 5px solid var(--yellow);
+    border-left: 20px solid var(--yellow);
     border-radius: 10px;
 }
 
